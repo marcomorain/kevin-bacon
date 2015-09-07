@@ -1,7 +1,7 @@
 (ns kevin-bacon.core-test
   (:require [clojure.test :refer :all]
-            [kevin-bacon.core :refer :all]))
+            [kevin-bacon.core  :as kb]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+
+    (kb/get-links "Iron_pillar_of_Delhi"))
